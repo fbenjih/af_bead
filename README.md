@@ -1,5 +1,7 @@
-<p><strong>K&ouml;vetelm&eacute;ny-anal&iacute;zis</strong></p>
-<p><strong>K&ouml;vetelm&eacute;nyek &ouml;sszegyűjt&eacute;se</strong></p>
+<h1><strong>Dokument&aacute;ci&oacute;</strong></h1>
+<p><strong>K&eacute;sz&iacute;tette:</strong> Farkas Benj&aacute;min (ND5JOE)</p>
+<h2><strong>K&ouml;vetelm&eacute;ny-anal&iacute;zis</strong></h2>
+<h3><span style="text-decoration: underline;"><strong>K&ouml;vetelm&eacute;nyek &ouml;sszegyűjt&eacute;se</strong></span></h3>
 <p><strong>Funkcion&aacute;lis k&ouml;vetelm&eacute;nyek</strong></p>
 <ul>
 <li>Legyen lehetős&eacute;g regisztr&aacute;ci&oacute;ra.</li>
@@ -41,7 +43,7 @@
 <li><strong>V&iacute;gj&aacute;t&eacute;k:</strong>&nbsp;A v&iacute;gj&aacute;t&eacute;k laz&aacute;n szőtt cselekm&eacute;nye t&uacute;lz&aacute;sba vitt helyzetekkel &eacute;s akci&oacute;kkal, karik&iacute;rozott nyelvvel &eacute;s esendő karakterekkel dolgozik.</li>
 <li><strong>Western:</strong>&nbsp;Műfaji ism&eacute;rve szerint a western az amerikai Vadnyugaton j&aacute;tsz&oacute;d&oacute; kalandfilm.</li>
 </ul>
-<p><strong>Haszn&aacute;latieset-modell</strong></p>
+<h2><strong>Haszn&aacute;latieset-modell</strong></h2>
 <p><strong>Szerepk&ouml;r&ouml;k</strong></p>
 <ul>
 <li><strong>Vend&eacute;g:</strong>&nbsp;Csak a publikus oldalakat &eacute;ri el</li>
@@ -73,8 +75,8 @@
 <li>Ekkor a "Filmek felv&eacute;tele" oldalon felviszi az adatokat, elmenti, ezzel &uacute;j filmet adva hozz&aacute; a list&aacute;hoz.</li>
 </ol>
 <p>https://github.com/fbenjih/af_bead/blob/master/images/folyamat_ujfilm.png</p>
-<p><strong>Tervez&eacute;s</strong></p>
-<p><strong>Architekt&uacute;ra terv</strong></p>
+<h2><strong>Tervez&eacute;s</strong></h2>
+<p><span style="text-decoration: underline;"><strong>Architekt&uacute;ra terv</strong></span></p>
 <p><strong>Oldalt&eacute;rk&eacute;p:</strong></p>
 <ul>
 <li><strong>Publikus:</strong></li>
@@ -116,16 +118,16 @@
 <li><strong>GET/:id/category</strong>: kiv&aacute;lasztott kateg&oacute;ria megtekint&eacute;se</li>
 <li><strong>GET/profile</strong>: adatlap megtekint&eacute;se</li>
 </ul>
-<p><strong>Felhaszn&aacute;l&oacute;ifel&uuml;let-modell</strong></p>
-<p><strong>Oldalv&aacute;zlatok</strong></p>
+<h2><strong>Felhaszn&aacute;l&oacute;ifel&uuml;let-modell</strong></h2>
+<p><span style="text-decoration: underline;"><strong>Oldalv&aacute;zlatok</strong></span></p>
 <p><strong>Főoldal:&nbsp;</strong>https://github.com/fbenjih/af_bead/blob/master/images/F%C5%91oldal2.jpg</p>
 <p><strong>Regisztr&aacute;ci&oacute;s oldal:&nbsp;</strong>https://github.com/fbenjih/af_bead/blob/master/images/reg_page.jpg</p>
 <p><strong>Kiv&aacute;lasztott film oldala:</strong>&nbsp;https://github.com/fbenjih/af_bead/blob/master/images/film2.jpg</p>
-<p><strong>Designtervek (v&eacute;gső megval&oacute;s&iacute;t&aacute;s kin&eacute;zete)</strong></p>
-<p>Főoldal:&nbsp;https://github.com/fbenjih/af_bead/blob/master/images/home.png</p>
-<p>Regisztr&aacute;ci&oacute;s oldal:&nbsp;https://github.com/fbenjih/af_bead/blob/master/images/reg.png</p>
-<p>Kiv&aacute;lasztott film oldala:&nbsp;https://github.com/fbenjih/af_bead/blob/master/images/movie.png</p>
-<p><strong>Oszt&aacute;lymodell</strong></p>
+<p><span style="text-decoration: underline;"><strong>Designtervek (v&eacute;gső megval&oacute;s&iacute;t&aacute;s kin&eacute;zete)</strong></span></p>
+<p><strong>Főoldal:</strong>&nbsp;https://github.com/fbenjih/af_bead/blob/master/images/home.png</p>
+<p><strong>Regisztr&aacute;ci&oacute;s oldal:</strong>&nbsp;https://github.com/fbenjih/af_bead/blob/master/images/reg.png</p>
+<p><strong>Kiv&aacute;lasztott film oldala:</strong>&nbsp;https://github.com/fbenjih/af_bead/blob/master/images/movie.png</p>
+<h2><strong>Oszt&aacute;lymodell</strong></h2>
 <p style="padding-left: 30px;"><strong>Adatmodell</strong></p>
 <p style="padding-left: 30px;">https://github.com/fbenjih/af_bead/blob/master/images/ujAdatbazisTerv.png</p>
 <p style="padding-left: 30px;"><strong>Adatb&aacute;zisterv</strong></p>
@@ -133,8 +135,8 @@
 <p><strong>&Aacute;llapotdiagram</strong></p>
 <p style="padding-left: 30px;">&Eacute;rt&eacute;kel&eacute;s</p>
 <p style="padding-left: 30px;">https://github.com/fbenjih/af_bead/blob/master/images/nomnoml.png</p>
-<p><strong>Implement&aacute;ci&oacute;</strong></p>
-<p><strong>Fejlesztői k&ouml;rnyezet bemutat&aacute;sa</strong></p>
+<h2><strong>Implement&aacute;ci&oacute;</strong></h2>
+<p><span style="text-decoration: underline;"><strong>Fejlesztői k&ouml;rnyezet bemutat&aacute;sa</strong></span></p>
 <p><strong>Lok&aacute;lis k&ouml;rnyezet</strong></p>
 <ul>
 <li>Github account sz&uuml;ks&eacute;ges</li>
@@ -213,7 +215,7 @@
 <li>server.js</li>
 </ul>
 </ul>
-<p><strong>Forr&aacute;sok</strong></p>
+<h2><strong>Forr&aacute;sok</strong></h2>
 <ul>
 <li><a href="https://github.com/horvathgyozo/alkfejl_minta">https://github.com/horvathgyozo/alkfejl_minta</a></li>
 <li><a href="http://webprogramozas.inf.elte.hu/alkfejl.php">http://webprogramozas.inf.elte.hu/alkfejl.php</a></li>
