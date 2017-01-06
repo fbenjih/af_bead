@@ -10,9 +10,19 @@
       <!-- Stylesheets -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
       <link rel="stylesheet" href="/style.css">
+
+       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    {% block styles %}{% endblock %}
    </head>
-   <body>
+   <body onload="startTime()">
       <div class="container">
+      <div id="time"></div>
+      <div id="navbar">
          <nav class="navbar navbar-default">
             <div class="container-fluid">
                <!-- Brand and toggle get grouped for better mobile display -->
@@ -41,8 +51,8 @@
                            <li role="separator" class="divider"></li>
                            <li><a href="/logout">Kijelentkezés</a></li>
                            {% else %} 
-                           <li role="presentation" class="active"><a href="/registration">Regisztráció <span class="sr-only">(current)</span></a></li>
-                           <li role="presentation"><a href="/login">Bejelentkezés</a></li>
+                           <li role="presentation" class="active"><a href="/registration" id="btnRegistration">Regisztráció <span class="sr-only">(current)</span></a></li>
+                           <li role="presentation"><a href="/login" id="btnLogin">Bejelentkezés</a></li>
                            {% endif %}
                         </ul>
                      </li>
@@ -70,13 +80,22 @@
                </div> <!-- /.navbar-collapse -->
             </div> <!-- /.container-fluid -->
          </nav>
+         </div>
          <div class="jumbotron">
             <section>
                {% block content %}{% endblock %}
             </section>
          </div> <!--div jumbotron-->
-          </div> <!--div container-fluid-->
+        
+        <input type="button" value="Vissza" onclick="goBack()">
+        <input type="button" value="Előre" onclick="goForward()">
+      
+        </div> <!--div container-fluid-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="/scripts/time.js"></script>
+      <script src="/scripts/back.js"></script>
+      <script src="/scripts/forward.js"></script>
+      {% block scripts %}{% endblock %}
    </body>
 </html>

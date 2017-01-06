@@ -22,3 +22,9 @@ Route.get('/logout', 'UserController.logout')
 Route.post('/movie/:id', 'MovieController.rating').middleware('auth')
 
 Route.get('/profile', 'UserController.profile').middleware('auth')
+
+Route.group('ajax', function () {
+  Route.delete('/movie/:id/delete', 'MovieController.ajaxDelete').middleware('auth')
+  Route.post('/login', 'UserController.ajaxLogin')
+  Route.post('/registration', 'UserController.ajaxRegistration')
+}).prefix('/ajax')
