@@ -215,6 +215,170 @@
 <li>server.js</li>
 </ul>
 </ul>
+<h2>Progressz&iacute;v fejleszt&eacute;s kliensoldali JavaScript seg&iacute;ts&eacute;g&eacute;vel</h2>
+<h3><a id="user-content-a-funkci&oacute;ban-&eacute;rintett-f&aacute;jlok-mind-kliens--&eacute;s-szerveroldalon" class="anchor" href="https://github.com/orsidudas/alkfejl_beadando#a-funkci&oacute;ban-&eacute;rintett-f&aacute;jlok-mind-kliens--&eacute;s-szerveroldalon"></a>A funkci&oacute;ban &eacute;rintett f&aacute;jlok mind kliens- &eacute;s szerveroldalon</h3>
+<ul>
+<li>beadando/resources/views/master.njk</li>
+<li>beadando/public/scripts/time.js</li>
+<li>beadando/public/scripts/back.js</li>
+<li>beadando/public/scripts/forward.js</li>
+<li>beadando/resources/views/createMovie.njk</li>
+<li>beadando/app/Http/Controllers/MovieController.js</li>
+<li>beadando/app/Http/routes.js</li>
+<li>beadando/public/scripts/delete.js</li>
+<li>beadando/resources/views/showMovie.njk</li>
+<li>beadando/app/Http/Controllers/UserController.js</li>
+<li>beadando/public/scripts/login.js</li>
+<li>beadando/resources/views/home.njk</li>
+<li>beadando/public/scripts/reg.js</li>
+<li>beadando/resources/views/showCategory.njk</li>
+</ul>
+<h3><a id="user-content-a-funkci&oacute;-műk&ouml;d&eacute;s&eacute;nek-folyamat&aacute;nak-sz&ouml;veges-le&iacute;r&aacute;sa" class="anchor" href="https://github.com/orsidudas/alkfejl_beadando#a-funkci&oacute;-műk&ouml;d&eacute;s&eacute;nek-folyamat&aacute;nak-sz&ouml;veges-le&iacute;r&aacute;sa"></a>A funkci&oacute; műk&ouml;d&eacute;s&eacute;nek, folyamat&aacute;nak sz&ouml;veges le&iacute;r&aacute;sa</h3>
+<ul>
+<li>&Oacute;ra:
+<ul>
+<li>Folyamatosan mutatja az időt</li>
+<li>beadando/public/scripts/time.js k&oacute;d fut le</li>
+<li>lek&eacute;ri az &oacute;r&aacute;t, percet, m&aacute;sodpercet, illetve, ha ezen &eacute;rt&eacute;kek valamelyike 10-n&eacute;l kisebb, kieg&eacute;sz&iacute;ti egy 0-val a form&aacute;tum miatt</li>
+</ul>
+</li>
+<li>Előre/Vissza gombok
+<ul>
+<li>forward.js illetve back.js k&oacute;d</li>
+<li>A gombra kattint&aacute;ssal el&eacute;rhető az előző/k&ouml;vetkező oldal, az oldal history-j&aacute;t k&eacute;rik le</li>
+</ul>
+</li>
+<li>Film hozz&aacute;ad&aacute;s valid&aacute;tor:
+<ul>
+<li>Ellenőrzi, hogy kit&ouml;lt&ouml;tt&uuml;nk-e minden mezőt</li>
+<li>Ha kit&ouml;lt&ouml;tt&uuml;k, z&ouml;ld pip&aacute;val jelzi, ellenben piros x jelzi a hib&aacute;t</li>
+</ul>
+</li>
+<li>Film t&ouml;rl&eacute;s&eacute;n&eacute;l felugr&oacute; ablak:
+<ul>
+<li>delete.js k&oacute;d</li>
+<li>Megk&eacute;rdezi, biztosan t&ouml;r&ouml;lj&uuml;k-e a filmet</li>
+</ul>
+</li>
+<li>Bejelentkez&eacute;sn&eacute;l felugr&oacute; ablak:
+<ul>
+<li>login.js k&oacute;d</li>
+</ul>
+</li>
+<li>Regisztr&aacute;ci&oacute;n&aacute;l felugr&oacute; ablak:
+<ul>
+<li>reg.js k&oacute;d</li>
+</ul>
+</li>
+</ul>
+<h3>Szekvencia-diagram</h3>
+<p>https://github.com/fbenjih/af_bead/blob/master/images/szekvencia_d.png</p>
+<h2>Tesztel&eacute;s</h2>
+<h3><a id="user-content-tesztesetek-felsorol&aacute;sa" class="anchor" href="https://github.com/orsidudas/alkfejl_beadando#tesztesetek-felsorol&aacute;sa"></a>Tesztesetek felsorol&aacute;sa</h3>
+<p>A tesztesetek a tests mapp&aacute;ban tal&aacute;lhat&oacute;ak.</p>
+<ol>
+<li>
+<p>Test suite 1: reg_log_add_del</p>
+<p>Amit tesztelni fog:</p>
+<ul>
+<li>regisztr&aacute;l&aacute;s (n&eacute;v: bodza, email: <a href="mailto:bodza@bodza.hu">bodza@bodza.hu</a>, jelsz&oacute;: bodza)</li>
+<li>bejelentkez&eacute;s (email: <a href="mailto:bodza@bodza.hu">bodza@bodza.hu</a>, jelsz&oacute;: bodza)</li>
+<li>film hozz&aacute;ad&aacute;sa</li>
+<li>film t&ouml;rl&eacute;se</li>
+</ul>
+</li>
+<li>
+<p>Test suite 1: log_add_categories_edit</p>
+<p>Amit tesztelni fog:</p>
+<ul>
+<li>bejelentkez&eacute;s (email: <a href="mailto:bodza@bodza.hu">bodza@bodza.hu</a>, jelsz&oacute;: bodza)</li>
+<li>film hozz&aacute;ad&aacute;sa</li>
+<li>kateg&oacute;ri&aacute;k k&ouml;z&ouml;tt l&eacute;peget&eacute;s</li>
+<li>hozz&aacute;adott film r&eacute;szleteinek megtekint&eacute;se</li>
+<li>hozz&aacute;adott film szerkeszt&eacute;se</li>
+</ul>
+</li>
+</ol>
+<h3><a id="user-content-tesztel&eacute;si-k&ouml;rnyezet-bemutat&aacute;sa-a-dokument&aacute;ci&oacute;ban-selenium-telep&iacute;t&eacute;se-tesztek-futtat&aacute;sa" class="anchor" href="https://github.com/orsidudas/alkfejl_beadando#tesztel&eacute;si-k&ouml;rnyezet-bemutat&aacute;sa-a-dokument&aacute;ci&oacute;ban-selenium-telep&iacute;t&eacute;se-tesztek-futtat&aacute;sa"></a>Tesztel&eacute;si k&ouml;rnyezet bemutat&aacute;sa a dokument&aacute;ci&oacute;ban (Selenium telep&iacute;t&eacute;se, tesztek futtat&aacute;sa)</h3>
+<p><strong>Selenium IDE telep&iacute;t&eacute;se:</strong></p>
+<ol>
+<li>Mozzila Firefox ind&iacute;t&aacute;sa</li>
+<li>Selenium IDE let&ouml;lt&eacute;se a <a href="https://addons.mozilla.org/hu/firefox/addon/selenium-ide/">https://addons.mozilla.org/hu/firefox/addon/selenium-ide/</a> oldalr&oacute;l</li>
+<li>Mozzila Firefox-&gt;Men&uuml; megnyit&aacute;sa-&gt;Testreszab&aacute;s-&gt;Selenium IDE beilleszt&eacute;se-&gt;Kil&eacute;p&eacute;s a testreszab&aacute;sb&oacute;l</li>
+<li>Selenium IDE elind&iacute;t&aacute;sa</li>
+</ol>
+<p><strong>Tesztek futtat&aacute;sa</strong></p>
+<ol>
+<li>localhost:3333 megnyit&aacute;sa</li>
+<li>JavaScript kikapcsol&aacute;sa a be&aacute;ll&iacute;t&aacute;sokban (F12-&gt;Be&aacute;ll&iacute;t&aacute;sok)</li>
+<li>F&aacute;jl-&gt;Open Test Suite-&gt;"reg_log_add_del" kiv&aacute;laszt&aacute;sa-&gt;Megnyit&aacute;s</li>
+<li>Fel&uuml;l a slidert Fast-ről Slow-ra &aacute;ll&iacute;t&aacute;sa</li>
+<li>Kattint&aacute;s a Play entire test suite gombra</li>
+</ol>
+<h2><a id="user-content-felhaszn&aacute;l&oacute;i-dokument&aacute;ci&oacute;" class="anchor" href="https://github.com/orsidudas/alkfejl_beadando#felhaszn&aacute;l&oacute;i-dokument&aacute;ci&oacute;"></a>Felhaszn&aacute;l&oacute;i dokument&aacute;ci&oacute;</h2>
+<h3><a id="user-content-a-futtat&aacute;shoz-aj&aacute;nlott-hardver--szoftver-konfigur&aacute;ci&oacute;" class="anchor" href="https://github.com/orsidudas/alkfejl_beadando#a-futtat&aacute;shoz-aj&aacute;nlott-hardver--szoftver-konfigur&aacute;ci&oacute;"></a>A futtat&aacute;shoz aj&aacute;nlott hardver-, szoftver konfigur&aacute;ci&oacute;</h3>
+<p>Oper&aacute;ci&oacute;s rendszer: Windows 7/ Windows 10 / Ubuntu Egy&eacute;b: Mozilla Firefox, JavaScript</p>
+<h3><a id="user-content-telep&iacute;t&eacute;s-l&eacute;p&eacute;sei-hogyan-ker&uuml;l-a-githubr&oacute;l-a-c&eacute;lg&eacute;pre-a-program-hogyan-kell-elind&iacute;tani" class="anchor" href="https://github.com/orsidudas/alkfejl_beadando#telep&iacute;t&eacute;s-l&eacute;p&eacute;sei-hogyan-ker&uuml;l-a-githubr&oacute;l-a-c&eacute;lg&eacute;pre-a-program-hogyan-kell-elind&iacute;tani"></a>Telep&iacute;t&eacute;s l&eacute;p&eacute;sei: hogyan ker&uuml;l a Githubr&oacute;l a c&eacute;lg&eacute;pre a program, hogyan kell elind&iacute;tani</h3>
+<ol>
+<li>K&oacute;d let&ouml;lt&eacute;se:
+<ul>
+<li>ZIP let&ouml;lt&eacute;se</li>
+<li>https://github.com/fbenjih/af_bead&nbsp;kl&oacute;noz&aacute;sa (termin&aacute;l futtat&aacute;sa + git clone ..)</li>
+</ul>
+</li>
+<li>Termin&aacute;lban a alkfejl_beadando/beadando mapp&aacute;ban elv&eacute;gzendő műveletek:
+<ul>
+<li>npm install</li>
+<li>a .env.example f&aacute;jl m&aacute;sol&aacute;sa &eacute;s &aacute;tnevez&eacute;se .env-re</li>
+<li>a k&oacute;d futtat&aacute;s npm run dev vagy npm start paranccsal</li>
+</ul>
+</li>
+<li>B&ouml;ng&eacute;szőben (Mozzila/Chrome) localhost:3333 megnyit&aacute;sa</li>
+</ol>
+<h3><a id="user-content-a-program-haszn&aacute;lata" class="anchor" href="https://github.com/orsidudas/alkfejl_beadando#a-program-haszn&aacute;lata"></a>A program haszn&aacute;lata</h3>
+<ul>
+<li>B&ouml;ng&eacute;szőben nyissuk meg a főoldalt</li>
+<li>A bal felső sarokban levő ikonra kattintva mindig a főoldalra jutunk</li>
+<li>A főoldalon szabadon v&aacute;ltogathatunk a filmműfajok k&ouml;z&ouml;tt</li>
+<li>Ha m&eacute;g nem regisztr&aacute;tunk:
+<ul>
+<li>A jobb felső sarokban kattintsunk a Regisztr&aacute;ci&oacute; gombra</li>
+<li>Regisztr&aacute;ci&oacute; ut&aacute;n a bejelentkez&eacute;si oldalra ker&uuml;l&uuml;nk, jelentkezz&uuml;nk be!</li>
+</ul>
+</li>
+<li>Ha m&aacute;r regisztr&aacute;ltunk:
+<ul>
+<li>A jobb felső sarokban kattintsunk a Bejelentkez&eacute;s gombra</li>
+<li>Jelentkezz&uuml;nk be!</li>
+</ul>
+</li>
+<li>A főoldalon:
+<ul>
+<li>szabadon v&aacute;ltogathatunk a filmműfajok k&ouml;z&ouml;tt</li>
+<li>r&aacute;kattinthatunk a filmekre, hogy megn&eacute;zz&uuml;k a r&eacute;szletes adataikat</li>
+<li>filmeket adhatunk hozz&aacute; az adatb&aacute;zishoz</li>
+</ul>
+</li>
+<li>Filmek hozz&aacute;ad&aacute;sa:
+<ul>
+<li>Kattintsunk a főoldalon a Film hozz&aacute;ad&aacute;sa gombra</li>
+<li>T&ouml;lts&uuml;k ki az adatokat</li>
+<li>Kattintsunk a Ment&eacute;s gombra, illetve a M&eacute;gse gombra, ha m&eacute;gsem k&iacute;v&aacute;njuk felvinni az adatokat</li>
+</ul>
+</li>
+<li>Filmek r&eacute;szletes megtekint&eacute;se:
+<ul>
+<li>A főoldalon kattintsunk a film n&eacute;vjegy&eacute;n a R&eacute;szletek gombra</li>
+<li>Valamelyik filmműfaj oldal&aacute;n kattintsunk a film n&eacute;vjegy&eacute;n a R&eacute;szletek gombra</li>
+</ul>
+</li>
+<li>Egy adott film szerkeszt&eacute;s&eacute;hez kattintsunk a film r&eacute;szletes adatlapj&aacute;n a Szerkeszt&eacute;s gombra (Ha mi adtuk hozz&aacute;)</li>
+<li>Egy adott film t&ouml;rl&eacute;s&eacute;hez kattintsunk a film r&eacute;szletes adatlapj&aacute;n a T&ouml;rl&eacute;s gombra (Ha mi adtuk hozz&aacute;)</li>
+<li>Egy adott film &eacute;rt&eacute;kel&eacute;s&eacute;hez a film r&eacute;szletes adatlapj&aacute;n v&aacute;lasszuk ki a sz&aacute;mot majd kattintsunk az &Eacute;rt&eacute;kel&eacute;s gombra</li>
+<li>Saj&aacute;t adatlap megtekint&eacute;s&eacute;hez a jobb felső sarokban nyissuk le a f&uuml;let &eacute;s v&aacute;lasszuk az Adatlap gombot</li>
+<li>Az adatlapon megtekinthetj&uuml;k az adatainkat, az &aacute;ltalunk hozz&aacute;adott filmeket, illetve ki is v&aacute;laszthatjuk őket r&eacute;szletes megtekint&eacute;sre</li>
+<li>Kijelentkez&eacute;shez a jobb felső sarokban nyissuk le a f&uuml;let &eacute;s v&aacute;lasszuk a Kijelentkez&eacute;s gombot</li>
+</ul>
 <h2><strong>Forr&aacute;sok</strong></h2>
 <ul>
 <li><a href="https://github.com/horvathgyozo/alkfejl_minta">https://github.com/horvathgyozo/alkfejl_minta</a></li>
